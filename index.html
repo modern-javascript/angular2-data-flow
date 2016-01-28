@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modern JS</title>
+    
+    <!-- Angular 2 (support) -->
+    <script src='node_modules/angular2/bundles/angular2-polyfills.js'></script>
+    <script src='node_modules/systemjs/dist/system.src.js'></script>
+    <script src='node_modules/rxjs/bundles/Rx.js'></script>
+    <script src='node_modules/angular2/bundles/angular2.dev.js'></script>
+    <script src='node_modules/angular2/bundles/router.dev.js'></script>
+    <script src='node_modules/angular2/bundles/http.dev.js'></script>
+    
+    <!-- Load our Angular components using System.js -->
+    <script type='text/javascript'>
+        System.config({
+            packages: {
+                "src": {
+                    format: "register",
+                    defaultExtension: "js"
+                }
+            }
+        });
+        System.import("src/bootstrap/bootstrap"); //Load the root component
+    </script>
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    Demonstration of how data flows from the root component to child components in Angular 2 using data binding.  Events may be used to flow the data back to parent components.
+    <modern-js></modern-js>
+</body>
+</html>
