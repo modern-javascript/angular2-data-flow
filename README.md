@@ -8,6 +8,6 @@ It demonstrates:
 * How to dynamically add recursive child components.
 
 Try it with three simple steps...
-# git clone https://github.com/modern-javascript/angular2-data-flow.git
-# npm install
-# npm start
+1. git clone https://github.com/modern-javascript/angular2-data-flow.git
+2. npm install
+3. npm start
